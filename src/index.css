@@ -19,3 +19,6 @@ body {
 .text-left-line {
   border-left: 1px solid black;
 }
+.btn-primary{
+  float: left;
+}
