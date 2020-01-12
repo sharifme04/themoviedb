@@ -48,5 +48,8 @@ Du kannst alle Werte über `process.env.{KEY}` benutzen. Den `API Key` bindest D
 > Falls Du das Projekt auf Github hochladen möchtest, versichere Dich dass Du nicht den API Key commitest.
 
 ---
+Please see the `screenshot` to see the view
+![screenshot](screenshots/MainPage.PNG)
+![screenshot](screenshots/Details.PNG)
 
 Mehr über die Entwicklungsumgebung und seine Möglichkeiten findest Du in der [Create React App Dokumentation](https://create-react-app.dev/).
