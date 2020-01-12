@@ -18,7 +18,13 @@ const MovieDetails = props => {
     <div className="text-center mt-4">
       <h3>Movie details</h3>
       <hr />
-      <button type="button" className="btn btn-primary" onClick={()=>props.history.push('/')}>Back</button>
+      <button
+        type="button"
+        className="btn btn-primary"
+        onClick={() => props.history.push("/")}
+      >
+        Back
+      </button>
       <div>
         <div className="row mt-5">
           <div className="col text-right">

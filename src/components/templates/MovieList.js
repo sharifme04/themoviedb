@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 const MovieList = props => {
   const imageUrl = process.env.REACT_APP_IMAGE_BASE_PATH;
   const { search, handleChange, movies } = props;
-
+console.log(movies.type);
   return (
     <div className="container-fluid">
       <h1>Search app</h1>
@@ -62,7 +62,7 @@ const MovieList = props => {
 MovieList.propTypes = {
   search: PropTypes.any,
   handleChange: PropTypes.func,
-  movies: PropTypes.object
+  movies: PropTypes.any
 };
 
 export default MovieList;
