@@ -12,7 +12,7 @@ function App(props) {
   const movies = useSelector(state => state.movies.movies);
 
   useEffect(() => {
-     dispatch(fetchMovies(search ? search : " ", currentPage));
+    dispatch(fetchMovies(search ? search : " ", currentPage));
   }, [currentPage, dispatch, search]);
 
   const handleChange = event => setSearch(event.target.value);
