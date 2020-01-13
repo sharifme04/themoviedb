@@ -13,7 +13,6 @@ export function fetchMovies(searchKey, page) {
   return dispatch =>{
       axios.get(`${api}/search/movie?api_key=${api_key}&query=${searchKey}&page=${page}`)
       .then( (response)=> {
-        console.log(response.data);
         dispatch({
           type:FETCH_MOVIES_SUCCESS,
           movies:response.data

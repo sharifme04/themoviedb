@@ -10,7 +10,9 @@ const MovieList = props => {
     <div className="container-fluid">
       <h1>Search app</h1>
       <hr />
-      <Pagination {...props} />
+      {props.movies && props.movies.total_pages > 1 && (
+        <Pagination {...props} />
+      )}
       <div className="row justify-content-center">
         <div className="col-12 d-flex justify-content-center">
           <div className="form-group col-4">
@@ -50,7 +52,11 @@ const MovieList = props => {
                 </Link>
               ))
           ) : (
-            <h5>Movies are not available</h5>
+            <h5>
+              {search
+                ? "Movies are not available"
+                : "Please enter a movie name"}
+            </h5>
           )}
         </div>
       </div>

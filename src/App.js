@@ -6,13 +6,13 @@ import MovieList from "./components/templates/MovieList";
 import MovieDetails from "./components/templates/MovieDetails";
 
 function App(props) {
-  const [search, setSearch] = useState("all");
+  const [search, setSearch] = useState("");
   const [currentPage, setCurrentPages] = useState(1);
   const dispatch = useDispatch();
   const movies = useSelector(state => state.movies.movies);
 
   useEffect(() => {
-    dispatch(fetchMovies(search, currentPage));
+     dispatch(fetchMovies(search ? search : " ", currentPage));
   }, [currentPage, dispatch, search]);
 
   const handleChange = event => setSearch(event.target.value);
