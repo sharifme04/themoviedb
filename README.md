@@ -49,6 +49,8 @@ Du kannst alle Werte über `process.env.{KEY}` benutzen. Den `API Key` bindest D
 
 ---
 Please see the `screenshot` to see the view
+![screenshot](screenshots/Home.PNG)
+![screenshot](screenshots/NotAvailable.PNG)
 ![screenshot](screenshots/MainPage.PNG)
 ![screenshot](screenshots/Details.PNG)
 
