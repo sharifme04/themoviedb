@@ -1,4 +1,4 @@
-# 3pc Coding Challenge React
+# Movie Search app React redux
 
 ## Voraussetzungen
 
